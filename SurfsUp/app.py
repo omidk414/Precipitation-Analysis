@@ -45,8 +45,8 @@ def welcome():
         f"/api/v1.0/precipitation<br/>"
         f"/api/v1.0/stations<br/>"
         f"/api/v1.0/tobs<br/>"
-        f"/api/v1.0/<start><br/>"
-        f"/api/v1.0/<start>/<end>"
+        f"/api/v1.0/&lt;start&gt;<br/>"
+        f"/api/v1.0/&lt;start&gt;/&lt;end&gt;"
     )
 
 @app.route("/api/v1.0/precipitation")
@@ -55,7 +55,7 @@ def precipitation():
     one_year = dt.date(2017, 8, 23) - dt.timedelta(days = 365)
     precipitation_data = session.query(Measurement.date, Measurement.prcp).filter(Measurement.date >= one_year).all()
     session.close()
-    precip = {date: prcp for date, prcp in precipitation}
+    precip = list(np.ravel(precipitation_data))
     return jsonify(precip)
 
 @app.route("/api/v1.0/stations")
@@ -83,7 +83,7 @@ def stats(start = None, end = None):
     results = [func.min(Measurement.tobs), func.avg(Measurement.tobs), func.max(Measurement.tobs)]
 
     if not end:
-        results = session.query(*sel).filter(Measurement.date <= start).all()
+        results = session.query(*results).filter(Measurement.date <= start).all()
         session.close()
         temps = list(np.ravel(results))
         return jsonify(temps)
