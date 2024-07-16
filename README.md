@@ -13,7 +13,7 @@ This project is about analyzing precipitation data from the last 12 months using
     - [Generating a Precipitation Graph](#generating-a-precipitation-graph)
     - [Example Flask API Route](#example-flask-api-route)
 7. [Usage](#usage)
-
+8. [Acknowledgements](#acknowledgements)
 
 ## Project Structure
 
@@ -140,3 +140,9 @@ python main_script.py
 python app.py
 ```
 The main script will output a plot showing the precipitation over the last 12 months. The Flask application will provide API endpoints to access the data.
+
+### Acknowledgements
+- Study Group Members:
+  - Gursimran Kaur - kaursimran081999@gmail.com - SimranBoparai\
+  - Evan Wall - ewall@escoffier.edu - Ewall24
+
