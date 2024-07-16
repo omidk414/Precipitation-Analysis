@@ -143,6 +143,6 @@ The main script will output a plot showing the precipitation over the last 12 mo
 
 ### Acknowledgements
 - Study Group Members:
-  - Gursimran Kaur - kaursimran081999@gmail.com - SimranBoparai\
+  - Gursimran Kaur - kaursimran081999@gmail.com - SimranBoparai
   - Evan Wall - ewall@escoffier.edu - Ewall24
 
