@@ -106,6 +106,8 @@ plt.xlabel('Date')
 plt.ylabel('Inches')
 plt.show()
 ```
+![precipitation](https://github.com/omidk414/sqlalchemy-challenge/blob/main/images/precipitation.png)
+
 
 ### Example Flask API Route
 
@@ -129,6 +131,8 @@ When accessing the URL http://127.0.0.1:5000/api/v1.0/precipitation, the followi
    3. Database Query Executed: Inside the route handler, a query is executed on the Measurement table to retrieve precipitation data for the last 12 months.
    4. Data Processing: The query results are processed and converted into a JSON-compatible format.
    5. HTTP Response Returned: The processed data is returned as a JSON response.
+
+![precipitationapi](https://github.com/omidk414/sqlalchemy-challenge/blob/main/images/precipitationapi.png)
 
 ## Usage
 
