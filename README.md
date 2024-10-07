@@ -1,4 +1,4 @@
-# Precipitation Analysis Project
+# Precipitation Analysis
 
 This project is about analyzing precipitation data from the last 12 months using a SQLite database and visualizing the results with Pandas and Matplotlib. Then using what we calculated and having that displayed on a Flask environment with API calls to each route.
 
