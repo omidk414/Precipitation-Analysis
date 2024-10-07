@@ -13,7 +13,6 @@ This project is about analyzing precipitation data from the last 12 months using
     - [Generating a Precipitation Graph](#generating-a-precipitation-graph)
     - [Example Flask API Route](#example-flask-api-route)
 7. [Usage](#usage)
-8. [Acknowledgements](#acknowledgements)
 
 ## Project Structure
 
