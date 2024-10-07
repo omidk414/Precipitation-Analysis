@@ -145,8 +145,4 @@ python app.py
 ```
 The main script will output a plot showing the precipitation over the last 12 months. The Flask application will provide API endpoints to access the data.
 
-### Acknowledgements
-- Study Group Members:
-  - Gursimran Kaur - kaursimran081999@gmail.com - SimranBoparai
-  - Evan Wall - ewall@escoffier.edu - Ewall24
 
